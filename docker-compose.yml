@@ -1,0 +1,25 @@
+name: cpd-proj2
+
+services:
+  ollama:
+    image: ollama/ollama
+    container_name: ollama14
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+
+  ollama-pull-llama:
+    image: ollama/ollama
+    container_name: llama_puller
+    volumes:
+      - ollama:/root/.ollama
+    environment:
+      - OLLAMA_HOST=ollama:11434
+    entrypoint: /bin/sh
+    command: -c "sleep 10; ollama pull llama3"
+    depends_on:
+      - ollama
+
+volumes:
+  ollama:
