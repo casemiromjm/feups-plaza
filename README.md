@@ -4,6 +4,10 @@
 ![Static Badge](https://img.shields.io/badge/Docker-ollama_%2B_llama3-gray?logo=docker&logoColor=white&labelColor=2496ED)
 ![Static Badge](https://img.shields.io/badge/SQLite-3.53-gray?logo=sqlite&logoColor=blue&labelColor=white)
 
+## Group
+- [casemiromjm](https://github.com/casemiromjm)
+- [heitorbrandao](https://github.com/heitorabrandao)
+- [TM_1.3](https://github.com/TM-1-3)
 
 ## Dependencies
 - JDK 21
